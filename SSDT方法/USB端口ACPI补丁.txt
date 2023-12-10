@@ -1,0 +1,55 @@
+DefinitionBlock ("", "SSDT", 1, "toleda", "amihdas1", 0x00003000)
+{
+    External (_SB_.PCI0.XHC_.RHUB, DeviceObj) // (from opcode)
+
+    Scope (_SB.PCI0.XHC.RHUB)
+    {
+        Method (_STA, 0, NotSerialized) // _STA: Status
+        {
+            If (_OSI ("Darwin")) // 在Mac关闭原来的RHUB(有的叫HUBN等)
+            {
+                Return (Zero)
+            }
+            Else
+            {
+                Return (0x0F)
+            }
+        }
+    }
+
+    Device (_SB.PCI0.XHC.RHU0)  // 在下面随便自定义一个喜欢的名称，比如我RHU0
+    {
+        Name (_ADR, Zero) // _ADR: Address
+        Device (HS01) // 这里HS01端口名称随便自定义，别和下面重复就行了，不要超过15个
+        {
+            Name (_ADR, One) // _ADR: Address 这里  One是关键 是表示1号端口(port1）
+            Method (_UPC, 0, Serialized) // _UPC: USB Port Capabilities
+            {
+                Name (UPCP, Package (0x04)
+                {
+                    0xFF,  // 这里0xFF(255)表示启用
+                    Zero,  // Zero代表USB2.0 0x03代表USB3.0 0x09代表分正反的TypeC 0x0A代表不带正反(转向器)的TypeC 0xFF代表内建专用连接器如蓝牙摄像头等
+                    Zero, 
+                    Zero
+                })
+                Return (UPCP)
+            }
+        }
+
+        Device (SS02)
+        {
+            Name (_ADR, 0x12) // _ADR: Address 这里也是关键  如 0x0A 是10号端口(port10) 端口号也可从Hackintool里面获取
+            Method (_UPC, 0, Serialized) // _UPC: USB Port Capabilities
+            {
+                Name (UPCP, Package (0x04)
+                {
+                    0xFF, 
+                    0x03,  // Zero代表USB2.0 0x03代表USB3.0 0x09代表分正反的TypeC 0x0A代表不带正反(转向器)的TypeC 0xFF代表内建专用连接器如蓝牙摄像头等
+                    Zero, 
+                    Zero
+                })
+                Return (UPCP)
+            }
+        }
+   }
+}

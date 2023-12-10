@@ -1,0 +1,215 @@
+[
+    {
+        "class": 48,
+        "identifiers": {
+            "acpi_path": "\\_SB.PCI0.XHC",
+            "bdf": [
+                0,
+                20,
+                0
+            ],
+            "location_id": 335544320,
+            "path": "IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/XHC@14/XHC@14000000",
+            "pci_id": [
+                "8086",
+                "a36d",
+                "1028",
+                "0871"
+            ],
+            "pci_revision": 16
+        },
+        "name": "XHC",
+        "ports": [
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [],
+                "guessed": 3,
+                "index": 1,
+                "location_id": 336592896,
+                "name": "HS01",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [],
+                "guessed": 3,
+                "index": 2,
+                "location_id": 337641472,
+                "name": "HS02",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [],
+                "guessed": 255,
+                "index": 3,
+                "location_id": 338690048,
+                "name": "HS03",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [],
+                "guessed": 3,
+                "index": 4,
+                "location_id": 339738624,
+                "name": "HS04",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [],
+                "guessed": 9,
+                "index": 5,
+                "location_id": 340787200,
+                "name": "HS05",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [],
+                "guessed": 3,
+                "index": 6,
+                "location_id": 341835776,
+                "name": "HS06",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [
+                    {
+                        "devices": [],
+                        "location_id": 343932928,
+                        "name": "Dell KB216 Wired Keyboard",
+                        "port": 8,
+                        "speed": 0
+                    }
+                ],
+                "guessed": 3,
+                "index": 8,
+                "location_id": 342884352,
+                "name": "HS08",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [
+                    {
+                        "devices": [],
+                        "location_id": 343932928,
+                        "name": "Dell KB216 Wired Keyboard",
+                        "port": 8,
+                        "speed": 0
+                    }
+                ],
+                "guessed": 0,
+                "index": 9,
+                "location_id": 343932928,
+                "name": "HS09",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [
+                    {
+                        "devices": [],
+                        "location_id": 346030080,
+                        "name": "Razer DeathAdder",
+                        "port": 10,
+                        "speed": 1
+                    }
+                ],
+                "guessed": 0,
+                "index": 10,
+                "location_id": 344981504,
+                "name": "HS10",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [
+                    {
+                        "devices": [],
+                        "location_id": 346030080,
+                        "name": "Razer DeathAdder",
+                        "port": 10,
+                        "speed": 1
+                    }
+                ],
+                "guessed": 0,
+                "index": 11,
+                "location_id": 346030080,
+                "name": "HS11",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [],
+                "guessed": 3,
+                "index": 12,
+                "location_id": 347078656,
+                "name": "HS12",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [],
+                "guessed": 255,
+                "index": 13,
+                "location_id": 348127232,
+                "name": "HS13",
+                "type": null
+            },
+            {
+                "class": 2,
+                "comment": null,
+                "devices": [],
+                "guessed": 255,
+                "index": 14,
+                "location_id": 349175808,
+                "name": "HS14",
+                "type": null
+            },
+            {
+                "class": 3,
+                "comment": null,
+                "devices": [],
+                "guessed": 3,
+                "index": 17,
+                "location_id": 350224384,
+                "name": "SS01",
+                "type": null
+            },
+            {
+                "class": 3,
+                "comment": null,
+                "devices": [
+                    {
+                        "devices": [],
+                        "location_id": 351272960,
+                        "name": " SanDisk 3.2Gen1",
+                        "port": 15,
+                        "speed": 3
+                    }
+                ],
+                "guessed": 3,
+                "index": 18,
+                "location_id": 351272960,
+                "name": "SS02",
+                "type": null
+            }
+        ]
+    }
+]
