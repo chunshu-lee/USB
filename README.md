@@ -9,3 +9,5 @@ Choose either SSDT or USBmap
 SSDT方法是把SSDT-USB-Fix.aml加载到OC的ACPI中
 
 USBmap方法是把USBPorts.kext加载到kext中
+
+USBmap方法不太稳定
